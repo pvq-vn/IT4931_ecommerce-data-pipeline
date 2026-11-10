@@ -95,7 +95,7 @@ Theo *Note 5 - Distributed Message Queue (Kafka)*:
 - **Spark Structured Streaming: Event-Time, Sliding Window & Watermarking:**
   - Xử lý dựa trên **Event-Time** (`event_timestamp` trích xuất từ trường `timestamp` bên trong gói tin JSON).
   - **Sliding Window (`1 phút`, trượt mỗi `10 giây`):** Mỗi sự kiện hợp lệ được ánh xạ vào 6 cửa sổ trượt chồng lấp nhau có độ rộng 60 giây.
-  - **Watermarking (`10 phút`):** Duy trì ngưỡng $\text{Watermark}_t = \max(\text{event\_timestamp}) - 10\text{ phút}$. Các sự kiện đến trễ dưới 10 phút vẫn được cập nhật vào cửa sổ cũ; các sự kiện trễ trên 10 phút bị loại bỏ và trạng thái cửa sổ cũ được giải phóng khỏi RAM (*State Store Cleanup*).
+  - **Watermarking (`10 phút`):** Duy trì ngưỡng  $$\text{Watermark}_t = \max(\mathtt{event\_timestamp}) - 10\text{ minutes}$$. Các sự kiện đến trễ dưới 10 phút vẫn được cập nhật vào cửa sổ cũ; các sự kiện trễ trên 10 phút bị loại bỏ và trạng thái cửa sổ cũ được giải phóng khỏi RAM (*State Store Cleanup*).
 
 ---
 
