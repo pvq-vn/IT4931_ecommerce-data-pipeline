@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T00:00:00Z",
+  "title": "Design System: IT4931 E-Commerce Big Data Pipeline",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Signal Blue", "canonical": "#2563EB", "tonalRamp": ["#172554", "#1E3A8A", "#1D4ED8", "#2563EB", "#3B82F6", "#93C5FD", "#BFDBFE", "#EFF6FF"] },
+      "primary-bright": { "role": "primary", "displayName": "Bright Blue", "canonical": "#3B82F6", "tonalRamp": ["#172554", "#1E40AF", "#2563EB", "#3B82F6", "#60A5FA", "#93C5FD", "#DBEAFE", "#EFF6FF"] },
+      "accent": { "role": "secondary", "displayName": "Speed Sky", "canonical": "#60A5FA", "tonalRamp": ["#1E3A8A", "#1D4ED8", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE", "#DBEAFE", "#EFF6FF"] },
+      "sky-soft": { "role": "secondary", "displayName": "Pale Sky", "canonical": "#BFDBFE", "tonalRamp": ["#1E3A8A", "#2563EB", "#60A5FA", "#93C5FD", "#BFDBFE", "#DBEAFE", "#EAF4FF", "#F5F9FF"] },
+      "navy": { "role": "tertiary", "displayName": "Deep Navy", "canonical": "#172554", "tonalRamp": ["#0B1230", "#172554", "#1E3A8A", "#3B5BA9", "#6B84C4", "#A5B6E0", "#D6DEF2", "#F1F5FF"] },
+      "insight-ink": { "role": "tertiary", "displayName": "Insight Ink", "canonical": "#1E3A8A", "tonalRamp": ["#172554", "#1E3A8A", "#1E40AF", "#3B5BA9", "#6B84C4", "#A5B6E0", "#D6DEF2", "#F1F5FF"] },
+      "ground": { "role": "neutral", "displayName": "Ice Ground", "canonical": "#F5F9FF", "tonalRamp": ["#1E293B", "#475569", "#94A3B8", "#CBD5E1", "#DCE8F7", "#EDF4FF", "#F1F7FF", "#F5F9FF"] },
+      "surface": { "role": "neutral", "displayName": "Glass White", "canonical": "#FFFFFF", "tonalRamp": ["#334155", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F3F8FF", "#F8FBFF", "#FFFFFF"] },
+      "ice": { "role": "neutral", "displayName": "Ice Tint", "canonical": "#EAF4FF", "tonalRamp": ["#1E3A8A", "#3B82F6", "#93C5FD", "#BFDBFE", "#DBEAFE", "#EAF4FF", "#EEF5FF", "#F5F9FF"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#172033", "tonalRamp": ["#0B1020", "#172033", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#F1F5F9"] },
+      "muted": { "role": "neutral", "displayName": "Muted Slate-Blue", "canonical": "#64748B", "tonalRamp": ["#0F172A", "#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#F1F5F9"] },
+      "slate": { "role": "neutral", "displayName": "Baseline Slate", "canonical": "#94A3B8", "tonalRamp": ["#1E293B", "#334155", "#475569", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F8FAFC"] },
+      "online": { "role": "semantic", "displayName": "Online Green", "canonical": "#10B981", "tonalRamp": ["#064E3B", "#065F46", "#047857", "#059669", "#10B981", "#6EE7B7", "#A7F3D0", "#ECFDF5"] },
+      "positive-ink": { "role": "semantic", "displayName": "Positive Ink", "canonical": "#047857", "tonalRamp": ["#022C22", "#064E3B", "#047857", "#059669", "#10B981", "#6EE7B7", "#A7F3D0", "#ECFDF5"] },
+      "negative-ink": { "role": "semantic", "displayName": "Negative Ink", "canonical": "#B42318", "tonalRamp": ["#55160C", "#7A271A", "#B42318", "#D92D20", "#F04438", "#F08A8A", "#FECDCA", "#FEF3F2"] },
+      "status-cancelled": { "role": "semantic", "displayName": "Cancelled Coral", "canonical": "#F08A8A", "tonalRamp": ["#7A271A", "#B42318", "#D92D20", "#F04438", "#F08A8A", "#FDA29B", "#FECDCA", "#FEF3F2"] },
+      "status-returned": { "role": "semantic", "displayName": "Returned Amber", "canonical": "#F2B861", "tonalRamp": ["#78350F", "#92400E", "#B45309", "#D97706", "#F2B861", "#FCD34D", "#FDE68A", "#FFFBEB"] },
+      "status-refunded": { "role": "semantic", "displayName": "Refunded Mist", "canonical": "#CBD5E1", "tonalRamp": ["#1E293B", "#334155", "#64748B", "#94A3B8", "#CBD5E1", "#E2E8F0", "#F1F5F9", "#F8FAFC"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Overview hero title only." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles of the batch, streaming and benchmark areas." },
+      "metric": { "displayName": "Metric", "purpose": "KPI values, tabular; live-strip values at 22px; units in a 15px/600 small." },
+      "title": { "displayName": "Title", "purpose": "Card titles led by a 16px line icon; brand name in the floating bar." },
+      "body": { "displayName": "Body", "purpose": "Page and hero descriptions, max 64-72ch." },
+      "body-sm": { "displayName": "Body Small", "purpose": "Card descriptions, insight text, spec rows." },
+      "label": { "displayName": "Label", "purpose": "KPI labels, widget labels, pills; nav items at 13.5px." },
+      "caption": { "displayName": "Caption", "purpose": "Sub-lines, notes, legends, tooltips, table footers." }
+    },
+    "shadows": [
+      { "name": "rim-ring", "value": "0 0 0 1px rgba(37,99,235,.07)", "purpose": "Faint blue outline on every glass panel." },
+      { "name": "inner-highlight", "value": "inset 0 1px 0 #fff", "purpose": "Lit top edge of panels and tiles." },
+      { "name": "resting", "value": "0 1px 2px rgba(23,37,84,.04), 0 6px 18px -8px rgba(23,37,84,.10)", "purpose": "Panels, tiles, button hover, status widget." },
+      { "name": "lifted", "value": "0 2px 8px rgba(23,37,84,.05), 0 22px 44px -18px rgba(23,37,84,.20)", "purpose": "KPI tile hover with a 2px rise." },
+      { "name": "floating-bar", "value": "inset 0 1px 0 #fff, 0 0 0 1px rgba(37,99,235,.08), 0 10px 30px -14px rgba(23,37,84,.22)", "purpose": "Sticky glass bar, paired with backdrop-filter: saturate(180%) blur(18px)." },
+      { "name": "blue-glow", "value": "inset 0 1px 0 rgba(255,255,255,.25), 0 8px 18px -8px rgba(37,99,235,.7)", "purpose": "Primary button and brand mark only." },
+      { "name": "active-segment", "value": "0 1px 2px rgba(23,37,84,.08), 0 6px 16px -8px rgba(37,99,235,.45), inset 0 0 0 1px rgba(37,99,235,.10)", "purpose": "Checked item in the segmented navigation." },
+      { "name": "focus-ring", "value": "outline: 2px solid rgba(37,99,235,.55); outline-offset: 2px", "purpose": "Global :focus-visible treatment." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Default ease-out for every transition and entrance." },
+      { "name": "rise", "value": "opacity .35→1, translateY 6px→0, .42-.45s", "purpose": "Panel and KPI tile entrance; tiles stagger 40ms; nested panels do not animate." },
+      { "name": "state", "value": ".16-.25s", "purpose": "Hover, segment and tooltip transitions." },
+      { "name": "flow", "value": "stroke-dasharray 2 14, dashoffset -32 over 1.6s linear infinite", "purpose": "Directional flow on architecture-map edges." },
+      { "name": "pulse", "value": "halo 3px→6px, 2.4s ease-in-out infinite", "purpose": "Live badge dot only." },
+      { "name": "reduced-motion", "value": "animation: none; transition: none", "purpose": "All motion disabled under prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "bar-compact", "value": "1360px" },
+      { "name": "grid-3", "value": "1140px" },
+      { "name": "tablet", "value": "900px" },
+      { "name": "mobile", "value": "640px" }
+    ],
+    "dataColorMaps": {
+      "architecture": { "CSV": "#94A3B8", "Parquet": "#60A5FA", "Partitioned Parquet": "#2563EB" },
+      "lambdaPath": { "batch": "#172554", "speed": "#60A5FA", "serving": "#2563EB" },
+      "orderStatus": { "Completed": "#2563EB", "Processing": "#60A5FA", "Cancelled": "#F08A8A", "Returned": "#F2B861", "Refunded": "#CBD5E1" },
+      "eventType": { "view": "#BFDBFE", "cart": "#60A5FA", "remove_from_cart": "#94A3B8", "purchase": "#2563EB" },
+      "infraStatus": { "online": "#10B981", "fallback": "#60A5FA", "unreachable": "#94A3B8" },
+      "winner": { "tiePercent": 5, "winnerOpacity": 1.0, "otherOpacity": 0.38, "winnerOutline": "1.2px #172554" },
+      "plotlyColorway": ["#2563EB", "#60A5FA", "#172554", "#93C5FD", "#94A3B8", "#1D4ED8", "#BFDBFE"]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single primary action on a surface (generate clickstream).",
+      "html": "<button class=\"ds-btn-primary\">Sinh luồng clickstream mới</button>",
+      "css": ".ds-btn-primary { font-family: Inter, system-ui, sans-serif; font-size: 13.5px; font-weight: 600; min-height: 40px; padding: 8px 16px; border: 0; border-radius: 12px; color: #fff; background: linear-gradient(180deg, #3B82F6, #2563EB); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 8px 18px -8px rgba(37,99,235,.7); cursor: pointer; transition: transform .18s cubic-bezier(.16,1,.3,1), box-shadow .18s cubic-bezier(.16,1,.3,1); } .ds-btn-primary:hover { transform: translateY(-1px); } .ds-btn-primary:active { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 2px solid rgba(37,99,235,.55); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet glass button for every non-primary action.",
+      "html": "<button class=\"ds-btn-secondary\">Làm mới</button>",
+      "css": ".ds-btn-secondary { font-family: Inter, system-ui, sans-serif; font-size: 13.5px; font-weight: 600; min-height: 40px; padding: 8px 16px; border-radius: 12px; border: 1px solid rgba(37,99,235,.14); background: rgba(255,255,255,.9); color: #172554; cursor: pointer; transition: box-shadow .18s cubic-bezier(.16,1,.3,1), border-color .18s, color .18s; } .ds-btn-secondary:hover { border-color: rgba(37,99,235,.35); color: #2563EB; box-shadow: 0 1px 2px rgba(23,37,84,.04), 0 6px 18px -8px rgba(23,37,84,.10); } .ds-btn-secondary:focus-visible { outline: 2px solid rgba(37,99,235,.55); outline-offset: 2px; }"
+    },
+    {
+      "name": "Segmented Navigation",
+      "kind": "nav",
+      "refersTo": "nav-segment",
+      "description": "Four-area nav inside the floating glass bar; masked line icon plus label per item.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item is-active\" href=\"#\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1.5\"/></svg>Tổng quan</a><a class=\"ds-nav-item\" href=\"#\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"M18 17V9\"/><path d=\"M13 17V5\"/><path d=\"M8 17v-3\"/></svg>Batch Analytics</a><a class=\"ds-nav-item\" href=\"#\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/></svg>Real-time Streaming</a></nav>",
+      "css": ".ds-nav { display: inline-flex; gap: 2px; padding: 4px; background: rgba(234,244,255,.75); border: 1px solid rgba(37,99,235,.08); border-radius: 16px; box-shadow: inset 0 1px 2px rgba(23,37,84,.05); font-family: Inter, system-ui, sans-serif; } .ds-nav-item { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px 8px 12px; border-radius: 12px; font-size: 13.5px; font-weight: 550; color: #64748B; text-decoration: none; white-space: nowrap; transition: background .22s cubic-bezier(.16,1,.3,1), color .22s cubic-bezier(.16,1,.3,1); } .ds-nav-item:hover { background: rgba(255,255,255,.7); color: #172033; } .ds-nav-item.is-active { background: #fff; color: #172554; font-weight: 650; box-shadow: 0 1px 2px rgba(23,37,84,.08), 0 6px 16px -8px rgba(37,99,235,.45), inset 0 0 0 1px rgba(37,99,235,.10); } .ds-nav-item.is-active svg { color: #2563EB; } .ds-nav-item:focus-visible { outline: 2px solid rgba(37,99,235,.55); outline-offset: 2px; }"
+    },
+    {
+      "name": "Glass Panel",
+      "kind": "card",
+      "refersTo": "kpi-tile",
+      "description": "Every bordered container: gradient white, white rim, inner highlight, rim ring, resting shadow.",
+      "html": "<section class=\"ds-panel\"><h3 class=\"ds-panel-title\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z\"/><path d=\"m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65\"/><path d=\"m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65\"/></svg>Luồng dữ liệu Lambda</h3><p class=\"ds-panel-desc\">Mỗi khối hiển thị số liệu thật của pipeline.</p></section>",
+      "css": ".ds-panel { font-family: Inter, system-ui, sans-serif; padding: 14px 16px; border-radius: 20px; background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.68)); border: 1px solid rgba(255,255,255,.95); box-shadow: inset 0 1px 0 #fff, 0 0 0 1px rgba(37,99,235,.07), 0 1px 2px rgba(23,37,84,.04), 0 6px 18px -8px rgba(23,37,84,.10); } .ds-panel-title { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 15px; font-weight: 650; letter-spacing: -.01em; color: #172554; } .ds-panel-desc { margin: 4px 0 0; font-size: 13px; line-height: 1.5; color: #64748B; }"
+    },
+    {
+      "name": "KPI Tile",
+      "kind": "custom",
+      "refersTo": "kpi-tile",
+      "description": "Headline metric: muted label, ice icon chip, navy tabular value, trend chip and sub-line.",
+      "html": "<div class=\"ds-kpi\"><div class=\"ds-kpi-top\"><span class=\"ds-kpi-label\">Tổng doanh thu</span><span class=\"ds-chip\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2v20\"/><path d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\"/></svg></span></div><div class=\"ds-kpi-value\">$491.4M</div><div class=\"ds-kpi-sub\"><span class=\"ds-trend ds-trend-down\">-8.8%</span>T12 so với T11</div></div>",
+      "css": ".ds-kpi { position: relative; overflow: hidden; width: 200px; font-family: Inter, system-ui, sans-serif; padding: 16px 16px 14px; border-radius: 20px; background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.68)); border: 1px solid rgba(255,255,255,.95); box-shadow: inset 0 1px 0 #fff, 0 0 0 1px rgba(37,99,235,.07), 0 1px 2px rgba(23,37,84,.04), 0 6px 18px -8px rgba(23,37,84,.10); transition: transform .25s cubic-bezier(.16,1,.3,1), box-shadow .25s cubic-bezier(.16,1,.3,1); } .ds-kpi::after { content: ''; position: absolute; inset: 0 0 auto 0; height: 46%; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,0)); } .ds-kpi:hover { transform: translateY(-2px); box-shadow: inset 0 1px 0 #fff, 0 0 0 1px rgba(37,99,235,.14), 0 2px 8px rgba(23,37,84,.05), 0 22px 44px -18px rgba(23,37,84,.20); } .ds-kpi-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; } .ds-kpi-label { font-size: 12.5px; font-weight: 550; color: #64748B; } .ds-chip { width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; color: #2563EB; background: #EAF4FF; } .ds-kpi-value { margin: 12px 0 6px; font-size: 27px; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; color: #172554; font-variant-numeric: tabular-nums; } .ds-kpi-sub { font-size: 12px; line-height: 1.45; color: #64748B; } .ds-trend { display: inline-flex; padding: 1px 7px; margin-right: 4px; border-radius: 999px; font-size: 11.5px; font-weight: 650; } .ds-trend-down { color: #B42318; background: rgba(240,138,138,.18); }"
+    },
+    {
+      "name": "Select Field",
+      "kind": "input",
+      "refersTo": "select",
+      "description": "Filter select with muted label.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Danh mục</span><select class=\"ds-select\"><option>Smartphone</option><option>Laptop</option></select></label>",
+      "css": ".ds-field { display: grid; gap: 6px; font-family: Inter, system-ui, sans-serif; width: 240px; } .ds-field-label { font-size: 12.5px; font-weight: 600; color: #64748B; } .ds-select { min-height: 40px; padding: 0 12px; font: inherit; font-size: 13.5px; color: #172033; border-radius: 12px; border: 1px solid rgba(37,99,235,.12); background: rgba(255,255,255,.9); box-shadow: 0 1px 2px rgba(23,37,84,.04); transition: border-color .2s, box-shadow .2s; } .ds-select:hover { border-color: rgba(37,99,235,.3); } .ds-select:focus-visible { outline: 2px solid rgba(37,99,235,.55); outline-offset: 2px; }"
+    },
+    {
+      "name": "Pill and Badges",
+      "kind": "chip",
+      "refersTo": "pill",
+      "description": "Hero meta pill and status badges (live, snapshot, ok, off).",
+      "html": "<div class=\"ds-row\"><span class=\"ds-pill\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/></svg>Cửa sổ gần nhất <b>06:05:20</b></span><span class=\"ds-badge ds-live\"><i></i>Live</span><span class=\"ds-badge ds-ok\">Pushdown bật</span><span class=\"ds-badge ds-off\">Pruning tắt</span></div>",
+      "css": ".ds-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-family: Inter, system-ui, sans-serif; } .ds-pill { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 999px; background: rgba(255,255,255,.8); border: 1px solid rgba(37,99,235,.10); font-size: 12.5px; font-weight: 500; color: #172033; } .ds-pill svg { color: #2563EB; } .ds-pill b { font-weight: 650; color: #172554; } .ds-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; } .ds-live { color: #047857; background: rgba(16,185,129,.12); } .ds-live i { width: 7px; height: 7px; border-radius: 50%; background: #10B981; box-shadow: 0 0 0 3px rgba(16,185,129,.18); } .ds-ok { color: #2563EB; background: rgba(37,99,235,.08); } .ds-off { color: #64748B; background: rgba(148,163,184,.14); }"
+    },
+    {
+      "name": "Insight Callout",
+      "kind": "custom",
+      "refersTo": "insight",
+      "description": "One-line why-explanation under each chart.",
+      "html": "<div class=\"ds-insight\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 16v-4M12 8h.01\"/></svg><div>Parquet + Snappy giảm dung lượng từ <b>95.47 MB</b> xuống <b>27.47 MB</b>.</div></div>",
+      "css": ".ds-insight { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 12px; background: rgba(234,244,255,.72); color: #1E3A8A; font-family: Inter, system-ui, sans-serif; font-size: 13px; line-height: 1.5; } .ds-insight svg { flex: none; margin-top: 1px; color: #2563EB; } .ds-insight b { color: #172554; font-weight: 650; }"
+    },
+    {
+      "name": "Benchmark Score Row",
+      "kind": "custom",
+      "refersTo": "kpi-tile",
+      "description": "Scoreboard rows applying the architecture ladder and the 5% tie rule.",
+      "html": "<div class=\"ds-score\"><div class=\"ds-score-row\"><span>CSV</span><div class=\"ds-bar\"><i style=\"width:100%;background:#94A3B8\"></i></div><b>2.182s</b></div><div class=\"ds-score-row\"><span>Parquet</span><div class=\"ds-bar\"><i style=\"width:6%;background:#60A5FA\"></i></div><b>0.128s</b></div><div class=\"ds-score-row is-best\"><span>Partitioned</span><div class=\"ds-bar\"><i style=\"width:3%;background:#2563EB\"></i></div><b>0.067s</b></div></div>",
+      "css": ".ds-score { width: 300px; font-family: Inter, system-ui, sans-serif; } .ds-score-row { display: grid; grid-template-columns: 96px 1fr 58px; align-items: center; gap: 8px; margin-top: 9px; font-size: 12px; color: #64748B; } .ds-bar { height: 8px; border-radius: 6px; background: rgba(148,163,184,.16); overflow: hidden; } .ds-bar i { display: block; height: 100%; border-radius: 6px; } .ds-score-row b { text-align: right; font-weight: 600; color: #172033; font-variant-numeric: tabular-nums; } .ds-score-row.is-best span, .ds-score-row.is-best b { color: #172554; font-weight: 700; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Glass Control Room",
+    "overview": "A light, cool console seen through clear glass. The ground is a pale ice field lit by two faint blue light pools (top-left and top-right, a third bottom-right); on it float white translucent panels, each with a bright one-pixel rim, a white inner top highlight and a soft navy-tinted shadow. Exactly one surface is truly frosted: the sticky floating bar that carries identity, the four-area segmented navigation and live infrastructure status. Everything else stays crisp so numbers read cleanly on a projector.\n\nThe system is data-first and calm. Navy carries headline numbers and titles; one saturated blue marks selection and the best result; a lighter sky blue carries the speed path and secondary series; slate carries the baseline. Colour encodes meaning (architecture, path, status), never decoration. Density is moderate: 16px gutters, 20px panel corners, tabular numerals everywhere a number can be compared.\n\nThe default Streamlit chrome (sidebar, toolbar, deploy button, footer, decoration stripe) is removed; the console owns the full width.",
+    "keyCharacteristics": [
+      "Ice ground with radial blue light fields, fixed to the viewport",
+      "White glass panels: gradient fill, white rim, inner highlight, navy-tinted soft shadow",
+      "Backdrop blur reserved for the floating bar only",
+      "Inter with tabular numerals; navy for numbers and headings, muted slate-blue for supporting text",
+      "One 24px line-icon set at 1.75 stroke, always inline SVG in `currentColor`",
+      "Meaning-bearing colour maps for architectures, Lambda paths, order status and event types",
+      "Short ease-out-expo motion that switches off entirely under reduced motion"
+    ],
+    "rules": [
+      { "name": "The Architecture Ladder Rule", "body": "Storage tiers are always CSV = slate, Parquet = accent, Partitioned Parquet = primary. The baseline stays neutral; the optimised tiers carry the blues. Never reassign these per chart.", "section": "colors" },
+      { "name": "The Two Paths Rule", "body": "In anything that draws the Lambda flow, the batch path is navy and the speed path is accent; serving-to-dashboard is primary.", "section": "colors" },
+      { "name": "The Winner Rule", "body": "In a comparison, every value within 5% of the best is a winner: full opacity with a 1.2px navy outline and a value label; all others drop to 0.38 opacity with no label. Ties are named as ties, never as a single winner.", "section": "colors" },
+      { "name": "The Tabular Rule", "body": "Every comparable number (KPIs, tables, scoreboard, map counts) uses `font-variant-numeric: tabular-nums`.", "section": "typography" },
+      { "name": "The Navy Number Rule", "body": "Values are navy and bold; their labels are muted and lighter. The number is always the loudest thing in its cell.", "section": "typography" },
+      { "name": "The One Frost Rule", "body": "Backdrop blur belongs to the floating bar alone. Content panels are translucent gradients without blur, so charts and numbers stay sharp.", "section": "elevation" },
+      { "name": "The Tinted Shadow Rule", "body": "Shadows are navy (`23,37,84`) or primary (`37,99,235`) tinted with negative spread; never neutral black, never hard offset.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** build every new panel from the glass recipe: gradient white fill, white rim, inner highlight, rim ring, resting shadow, 20px corners.",
+      "**Do** use the architecture ladder (CSV slate, Parquet accent, Partitioned primary) and the 5% tie rule for every benchmark view.",
+      "**Do** colour Lambda paths batch = navy, speed = accent.",
+      "**Do** lead each card title with a 16px line icon from the shared set (1.75 stroke, `currentColor`).",
+      "**Do** follow every chart with a one-line insight callout that explains why, with bold navy keywords.",
+      "**Do** use tabular numerals for every comparable number.",
+      "**Do** keep motion short and ease-out (`cubic-bezier(.16,1,.3,1)`, 0.16-0.45s) and let `prefers-reduced-motion` disable all of it."
+    ],
+    "donts": [
+      "**Don't** add backdrop blur to content panels; frost belongs to the floating bar.",
+      "**Don't** reintroduce the Streamlit sidebar, toolbar or stock Plotly theme.",
+      "**Don't** use neutral-black or hard offset shadows.",
+      "**Don't** spend primary blue on decoration; it marks selection, the primary action and the best result.",
+      "**Don't** highlight a single winner when values are within 5% of each other.",
+      "**Don't** use emoji or text glyphs as icons; icons come from the inline SVG set."
+    ]
+  }
+}
