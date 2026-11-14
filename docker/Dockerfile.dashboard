@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir \
 
 COPY src /app/src
 COPY data /app/data
+COPY .streamlit /app/.streamlit
 
 ENV PYTHONPATH=/app
 EXPOSE 8501
